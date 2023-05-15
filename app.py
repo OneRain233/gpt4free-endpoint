@@ -85,7 +85,7 @@ def get_content_to_send(messages):
         if simulate_roles:
             content += "||>" + leading_map[message["role"]] + ":\n" + message["content"] + "\n"
         else:
-            content += message["Content"] + "\n"
+            content += message["content"] + "\n"
     if simulate_roles:
         content += "||>Assistant:\n"
     return content
